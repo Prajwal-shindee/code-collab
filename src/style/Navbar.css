@@ -1,0 +1,180 @@
+/* Navbar styles */
+.navbar {
+    background-color: #282a36;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    width: 100%;
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    z-index: 1;
+    width: 100%;
+    max-width: 1300px;
+    margin: 0 auto;
+    padding: 0 50px;
+  }
+  
+  .navbar-logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-logo img {
+    height: 60px;
+  }
+  
+  .navbar-links {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .navbar-links a {
+    color: #fff;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    height: 100%;
+    cursor: pointer;
+    position: relative;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-links a::after {
+    content: "";
+    display: block;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    height: 2px;
+    width: 0;
+    background-color: #fff;
+    transition: width 0.3s ease;
+  }
+  
+  .navbar-links a:hover {
+    color: #8be9fd;
+  }
+  
+  .navbar-links a:hover::after {
+    width: 100%;
+  }
+  
+  .navbar-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .navbar-icons a {
+    color: #333;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    padding: 0 1rem;
+    height: 100%;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  
+  .icon {
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+  }
+  
+  .linkedin {
+    color: #0e76a8;
+  }
+  
+  .linkedin:hover {
+    color: #0077b5;
+  }
+  
+  .twitter {
+    color: #1da1f2;
+  }
+  
+  .twitter:hover {
+    color: #00acee;
+  }
+  
+  .email {
+    color: #ea4335;
+  }
+  
+  .email:hover {
+    color: #dd4b39;
+  }
+  
+  .navbar-toggle {
+    display: none;
+  }
+  
+  @media screen and (max-width: 960px) {
+    .navbar {
+      transition: 0.8s all ease;
+    }
+  
+    .navbar-container {
+      display: flex;
+      justify-content: space-between;
+      height: 80px;
+      z-index: 1;
+      width: 100%;
+      max-width: 1300px;
+      margin: 0 auto;
+      padding: 0 50px;
+    }
+  
+    .navbar-toggle {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.8rem;
+      cursor: pointer;
+      z-index: 999;
+    }
+  
+    .navbar-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 80px;
+        left: -100%;
+        width: 100%;
+        height: 90vh;
+        opacity: 1;
+        transition: all 0.5s ease;
+        background-color: #282a36;
+        z-index: 1;
+      }
+    
+      .navbar-links.active {
+        left: 0;
+        opacity: 1;
+        transition: all 0.5s ease;
+        z-index: 1;
+      }
+    
+      .navbar-links a {
+          font-size: 1.5rem;
+          transition: color 0.3s ease;
+          color: #fff;
+        }
+      
+        .navbar-links a:hover {
+          color: #8be9fd;
+        }
+      }
