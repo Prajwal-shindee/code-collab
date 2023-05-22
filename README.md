@@ -1,3 +1,2 @@
 ### Demo
-
-https://code-sync.codersgyan.com/
+https://sigma-code-react.onrender.com/
